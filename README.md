@@ -44,11 +44,37 @@ Both have following issues:
 - download xremap config named [linux.yml](./linux.yml)
 - add xremap with config to autorun
 
+```bash
+#!/bin/bash
+
+# get repo
+mkdir -p ~/.config
+git clone https://github.com/XelorR/KeyBridge ~/.config/keybridge
+
+# install keymapping software
+bash ~/.config/keybridge/install-xremap.sh
+
+# setup system wshortcuts to ensure compatibility
+bash ~/.config/keybridge/pre-setup-linux.sh
+
+# enable service
+systemctl enable --now --user xremap
+```
+
 ### Windows setup
 
 - install [autohotkey v2](https://www.autohotkey.com/v2/)
 - download ahkv2 config named [windows.ahk](./windows.ahk)
 - place config to `shell:startup` and run it
+
+```powershell
+# install keymapping software
+
+# add to autorun
+
+# run
+
+```
 
 ## To do
 
