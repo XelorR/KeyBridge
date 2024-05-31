@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# download the binary
 if [[ "$XDG_CURRENT_DESKTOP" == "GNOME" || "$XDG_CURRENT_DESKTOP" == "ubuntu:GNOME" ]]; then
 	platform="gnome"
 else
@@ -14,5 +15,23 @@ mkdir -p $HOME/.local/bin/
 7z x $xremap_name -O$HOME/.local/bin/
 rm $xremap_name
 
+# Create systemd service file for Xremap
+mkdir -p $HOME/.config/systemd/user
+XREMAP_PATH="$HOME/.local/bin/xremap"
+
+cat <<EOF >$HOME/.config/systemd/user/xremap.service
+[Unit]
+Description=Xremap Service
+[Service]
+ExecStart=$XREMAP_PATH --watch $HOME/.config/keybridge/linux.yml
+Restart=always
+RestartSec=3
+[Install]
+WantedBy=default.target
+EOF
+
+systemctl --user daemon-reload
+
+# adding user to input group, to avoid using sudo
 sudo gpasswd -a $USER input
 echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/input.rules

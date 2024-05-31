@@ -90,7 +90,7 @@ git clone https://github.com/XelorR/KeyBridge $env:LOCALAPPDATA/keybridge
 
 ## To do
 
-- [ ] systemd service for xremap
+- [x] systemd service for xremap
 - [ ] setup scripts
 - [ ] more linux desktops support
 - [ ] smarter xremap Installation
