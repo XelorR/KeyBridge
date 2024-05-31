@@ -21,7 +21,7 @@ Unified ergonomic MacOS-like bindings for GNU Linux and MS Windows
 
 I am familiar with two similar projects
 
-- [Kinto](kinto.sh)
+- [Kinto](https://kinto.sh)
 - [Toshy](https://github.com/RedBearAK/toshy)
 
 Both have following issues:
