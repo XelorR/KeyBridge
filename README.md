@@ -39,6 +39,7 @@ Both have following issues:
 ### Linux setup
 
 - [install](./install-xremap.sh) [xremap](https://github.com/xremap/xremap)
+- install [this](https://extensions.gnome.org/extension/5060/xremap/) Gnome extension if use Gnome
 - run [pre-setup script](./pre-setup-linux.sh)
 - download xremap config named [linux.yml](./linux.yml)
 - add xremap with config to autorun
