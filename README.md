@@ -96,3 +96,4 @@ git clone https://github.com/XelorR/KeyBridge $env:LOCALAPPDATA/keybridge
 - [ ] smarter xremap Installation
 - [ ] windows switch desktops by numbers
 - [ ] more detailed readme: analysis description
+- [ ] xremap installer compatibility with arm64
