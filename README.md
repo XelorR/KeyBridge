@@ -68,14 +68,23 @@ systemctl enable --now --user xremap
 - place config to `shell:startup` and run it
 
 ```powershell
+# install package manager
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
 # install keymapping software
+scoop install git
+scoop bucket add extras
+scoop install autohotkey
 
 # download the config
+git clone https://github.com/XelorR/KeyBridge $env:LOCALAPPDATA/keybridge
 
 # add to autorun
+...
 
 # run
-
+...
 ```
 
 ## To do
