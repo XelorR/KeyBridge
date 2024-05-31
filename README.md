@@ -10,6 +10,7 @@ Currently Ubuntu 24.04 and Windows 11 tested
 - most ergonomic keys, taking best from all systems
 - learn once, use everywhere
 - easy to setup
+- to use [xremap](https://github.com/xremap/xremap) instead of [xkeysnail](https://github.com/mooz/xkeysnail)/[keyszer](https://github.com/joshgoebel/keyszer)
 
 ## Analysis
 
