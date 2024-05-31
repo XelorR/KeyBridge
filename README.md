@@ -53,6 +53,7 @@ Both have following issues:
 
 - [ ] systemd service for xremap
 - [ ] setup scripts
-- [ ] more linux desktop support
+- [ ] more linux desktops support
+- [ ] smarter xremap Installation
 - [ ] windows switch desktops by numbers
 - [ ] more detailed readme: analysis description
