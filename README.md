@@ -2,6 +2,8 @@
 
 Unified ergonomic MacOS-like bindings for GNU Linux and MS Windows
 
+Currently Ubuntu 24.04 and Windows 11 tested
+
 ## Motivation
 
 - unification and similar experience
@@ -50,3 +52,4 @@ Both have following issues:
 - [ ] setup scripts
 - [ ] more linux desktop support
 - [ ] windows switch desktops by numbers
+- [ ] more detailed readme: analysis description
