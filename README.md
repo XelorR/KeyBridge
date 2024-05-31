@@ -70,6 +70,8 @@ systemctl enable --now --user xremap
 ```powershell
 # install keymapping software
 
+# download the config
+
 # add to autorun
 
 # run
