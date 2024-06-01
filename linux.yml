@@ -391,6 +391,17 @@ keymap:
           s,
           Enter,
         ]
+  - name: "control comma opens settings"
+    application:
+      only: [Warp, Code, VSCodium, KeePassXC]
+    remap:
+      Alt-comma: Control-comma
+
+  - name: "gnome terminal - open settings"
+    application:
+      only: [gnome-terminal-server, Gnome-terminal]
+    remap:
+      Alt-comma: [Shift-F10, p, Enter]
 
   # TERMINALS
   - name: terminals
@@ -483,7 +494,7 @@ keymap:
       # implemented in VSCODE LETTERS subsection       | ⌘p      | Go to file
       # implemented in VSCODE LETTERS subsection       | ⌘⇧n     | New window/instance
       # implemented in VSCODE LETTERS subsection       | ⌘w      | Close window/instance
-      Alt-comma: Control-comma #                       | ⌘,      | User settings
+      # implemented for all CONTROL COMMA applications | ⌘,      | User settings
       # implemented in VSCODE LETTERS subsection       | ⌘k ⌘s   | Keyboard shortcuts
 
       ## BASIC EDITING
