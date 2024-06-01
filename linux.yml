@@ -304,7 +304,6 @@ keymap:
       Alt-n: Control-n
       Alt-o: Enter
       Alt-p: Control-p
-      Alt-q: Control-q
       Alt-r: Control-r
       Alt-s: Control-s
       Alt-t: Control-t
@@ -416,6 +415,8 @@ keymap:
           kitty,
           wezterm,
           Warp,
+          dolphin,
+          Nautilus,
         ]
     remap:
       Alt-q: Alt-F4
