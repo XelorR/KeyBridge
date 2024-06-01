@@ -15,17 +15,15 @@ mkdir -p $HOME/.local/bin/
 7z x $xremap_name -O$HOME/.local/bin/
 rm $xremap_name
 
-# Create systemd service file for Xremap
+# Create systemd service file
 mkdir -p $HOME/.config/systemd/user
 XREMAP_PATH="$HOME/.local/bin/xremap"
 
-cat <<EOF >$HOME/.config/systemd/user/xremap.service
+cat <<EOF >$HOME/.config/systemd/user/keybridge.service
 [Unit]
 Description=Xremap Service
 [Service]
 ExecStart=$XREMAP_PATH --watch $HOME/.config/keybridge/linux.yml
-Restart=always
-RestartSec=3
 [Install]
 WantedBy=default.target
 EOF
