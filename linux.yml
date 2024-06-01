@@ -585,6 +585,12 @@ keymap:
       Alt-1: Control-1 #                               | ⌘1      | Focus into 1st editor group
       Alt-2: Control-2 #                               | ⌘2      | Focus into 2nd editor group
       Alt-3: Control-3 #                               | ⌘3      | Focus into 3rd editor group
+      Alt-4: Control-4 #                               | ⌘4      | Focus into 4th editor group
+      Alt-5: Control-5 #                               | ⌘5      | Focus into 5th editor group
+      Alt-6: Control-6 #                               | ⌘6      | Focus into 6th editor group
+      Alt-7: Control-7 #                               | ⌘7      | Focus into 7th editor group
+      Alt-8: Control-8 #                               | ⌘8      | Focus into 8th editor group
+      Alt-9: Control-9 #                               | ⌘9      | Focus into 9th editor group
       # to be implemented                              | ⌘k ⌘←   | Focus into previous editor group
       # to be implemented                              | ⌘k ⌘→   | Focus into next editor group
       # to be implemented                              | ⌘⇧k ⌘⇧← | Move editor left
