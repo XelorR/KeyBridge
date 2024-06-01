@@ -48,7 +48,8 @@ if [[ "$XDG_CURRENT_DESKTOP" == "GNOME" || "$XDG_CURRENT_DESKTOP" == "ubuntu:GNO
 		echo Configuring launchers...
 		gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Control><Alt>t', '<Super>t']"
 		gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
-		# gsettings set gsettings set org.gnome.mutter overlay-key ''
+		gsettings set gsettings set org.gnome.mutter overlay-key ''
+		gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "['<Super><Control><Shift>F10']"
 		gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>w', '<Alt>Space']"
 		gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a']"
 
