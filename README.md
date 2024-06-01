@@ -40,7 +40,7 @@ Both have following issues:
 ### Linux setup
 
 - [install](./install-xremap.sh) [xremap](https://github.com/xremap/xremap)
-- install [this](https://extensions.gnome.org/extension/5060/xremap/) Gnome extension if use Gnome
+- install [this](https://extensions.gnome.org/extension/5060/xremap/) **Gnome extension** if use Gnome
 - run [pre-setup script](./pre-setup-linux.sh)
 - download xremap config named [linux.yml](./linux.yml)
 - add xremap with config to autorun
@@ -55,12 +55,16 @@ git clone https://github.com/XelorR/KeyBridge ~/.config/keybridge
 # install keymapping software
 bash ~/.config/keybridge/install-xremap.sh
 
-# setup system wshortcuts to ensure compatibility
+# setup system shortcuts to ensure compatibility
 bash ~/.config/keybridge/pre-setup-linux.sh
 
 # enable service
 systemctl enable --now --user xremap
 ```
+
+If you use [VSCodium](https://vscodium.com/) or [VSCode](https://code.visualstudio.com/), you should also disable Alt focusing to menu bar:
+
+![disable alt in vscode](./assets/vscode-disable-alt-focus-menu-bar.png)
 
 ### Windows setup
 
