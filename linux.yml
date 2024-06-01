@@ -316,6 +316,11 @@ keymap:
       Alt-Backspace: Delete
       Alt-Shift-Backspace: Shift-Delete
       Control-Alt-f: F11
+  - name: Nautilus
+    application:
+      only: [Nautilus]
+    remap:
+      F4: [Shift-F10, e]
 
   # TABS
   - name: "tabs c-pgup"
