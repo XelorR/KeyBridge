@@ -35,3 +35,4 @@ systemctl --user daemon-reload
 # adding user to input group, to avoid using sudo
 sudo gpasswd -a $USER input
 echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/input.rules
+echo udev rule added, you may need to reboot
