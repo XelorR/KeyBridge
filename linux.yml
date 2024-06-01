@@ -403,13 +403,29 @@ keymap:
     remap:
       Alt-comma: [Shift-F10, p, Enter]
 
+  # CLOSE WITH Alt-F4
+  # at least terminals and it's settings to include
+  - name: "to be closed with Alt-F4, not ctrl-q"
+    application:
+      only:
+        [
+          gnome-terminal-preferences,
+          konsole,
+          gnome-terminal-server,
+          Gnome-terminal,
+          kitty,
+          wezterm,
+          Warp,
+        ]
+    remap:
+      Alt-q: Alt-F4
+
   # TERMINALS
   - name: terminals
     application:
       only:
         [konsole, gnome-terminal-server, Gnome-terminal, kitty, wezterm, Warp]
     remap:
-      Alt-q: Alt-F4
       Alt-n: Control-Shift-n
       Alt-t: Control-Shift-t
       Alt-w: Control-Shift-w
