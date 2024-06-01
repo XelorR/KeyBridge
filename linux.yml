@@ -427,7 +427,7 @@ keymap:
       Alt-d: Control-d #                               | ⌘d      | Add selection to next find match
       Alt-e: Control-e
       Alt-f: Control-f
-      Alt-g: F3 #                                      | ⌘g      | Find next
+      Alt-g: Control-F3 #                                      | ⌘g      | Find next
       Alt-h: Control-h
       Alt-i: Control-i
       Alt-j: Control-j
@@ -454,7 +454,7 @@ keymap:
       Alt-Shift-d: Control-Shift-d #                   | ⇧⌘d     | Focus run and debug
       Alt-Shift-e: Control-Shift-e #                   | ⇧⌘e     | Focus file explorer
       Alt-Shift-f: Control-Shift-f #                   | ⇧⌘f     | Focus find dialig
-      Alt-Shift-g: Shift-F3 #                          | ⇧⌘g     | Find frevious
+      Alt-Shift-g: Control-Shift-F3 #                          | ⇧⌘g     | Find frevious
       Alt-Shift-h: Alt-Shift-h
       Alt-Shift-i: Alt-Shift-i
       Alt-Shift-j: Alt-Shift-j
@@ -469,7 +469,7 @@ keymap:
       Alt-Shift-s: Control-Shift-s #                   | ⇧⌘s     | Save as
       Alt-Shift-t: Control-Shift-t #                   | ⇧⌘t     | Restore tab
       Alt-Shift-u: Alt-Shift-u
-      Alt-Shift-v: Alt-Shift-v
+      Alt-Shift-v: Control-Shift-v #                   | ⇧⌘v     | Preview
       Alt-Shift-w: Alt-Shift-w
       Alt-Shift-x: Control-Shift-x #                   | ⌘⇧x     | Focus extensions
       Alt-Shift-y: Alt-Shift-y
@@ -604,7 +604,7 @@ keymap:
       # implemented in VSCODE LETTERS subsection #     | ⌃tab    | Open next
       # implemented in VSCODE LETTERS subsection #     | ⌃⇧tab   | Open previous
       # implemented in VSCODE LETTERS subsection #     | ⌘k p    | Copy path to active file
-      # implemented in VSCODE LETTERS subsection #     | ⌘k r    | Reveal active file in file manager
+      # to be implemented                              | ⌘k r    | Reveal active file in file manager
       # implemented in VSCODE LETTERS subsection #     | ⌘k o    | Show active file in new window/instance
 
       ## DISPLAY
