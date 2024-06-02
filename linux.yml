@@ -9,6 +9,7 @@ keymap:
       # MISSION CONTROL
       Control-up: Super-w
       F3: Super-w
+      Alt-F3: Super-d
       Control-left: Super-pageup
       Control-right: Super-pagedown
       Control-Shift-left: Super-Shift-pageup
