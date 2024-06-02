@@ -37,6 +37,7 @@ Both have following issues:
 
 - no multitasking / workspace control mappings
 - modifier swap for _some_ apps which breaks general OS functionality
+- focusing on wide range of desktop environments which require some trade-offs, force to avoid some features and increasing complexity
 
 ## Installation
 
