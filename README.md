@@ -4,7 +4,7 @@ Unified ergonomic MacOS-like bindings for GNU Linux and MS Windows
 
 Currently Ubuntu 24.04 and Windows 11 tested.
 
-> At it may work on wide range of desktops and configurations, supporting both Wayland and X11, I am focusing on supporting only two most popular systems: **Gnome (Wayland)** and **Windows 11**.
+> As it may work on wide range of desktops and configurations, supporting both Wayland and X11, I am still focusing on supporting only two most popular systems: **Gnome (Wayland)** and **Windows 11**.
 
 ## Motivation
 
