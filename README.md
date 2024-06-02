@@ -21,7 +21,8 @@ Currently Ubuntu 24.04 and Windows 11 tested
 - multitasking...
 - window management...
 - capslock...
-- file manaher operations..
+- file manager operations..
+- compatibility with emacs and posix bindings
 
 ## Similar projects
 
