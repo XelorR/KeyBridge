@@ -250,6 +250,23 @@ keymap:
       Alt-right: end
       Alt-up: Control-home # cmd-up    | go to beginning of file
       Alt-down: Control-end # cmd-down | go to end of file
+  - name: "emacs-like"
+    application:
+      # exclude terminals, filemanagers and Emacs
+      not:
+        [
+          konsole,
+          Gnome-terminal,
+          gnome-terminal-server,
+          kitty,
+          wezterm,
+          Emacs,
+          Nautilus,
+          dolphin,
+          qemu-system-x86_64,
+          Warp,
+        ]
+    remap:
       Control-p: up
       Control-n: down
       Control-f: right
