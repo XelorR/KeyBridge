@@ -12,7 +12,7 @@ Assume:
 | CapsLock     | ⎋ (Escape)         |
 | Shift        | ⇧ (Shift)          |
 | Ctrl         | ⌃ (Control)        |
-| Super        | ⌥ (Option)         |
+| Super (Win)  | ⌥ (Option)         |
 | Alt          | ⌘ (Command)        |
 | Backspace    | ⌫ (Delete)         |
 | Del          | ⌦ (Forward Delete) |
