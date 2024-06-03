@@ -28,7 +28,7 @@ Expect similar behavior on MacOS, GNU Linux and MacOS in general:
 - [Rectangle](https://rectangleapp.com/)-like window snap left/right and maximize (⌃⌥←, ⌃⌥→, ⌃⌥Enter)
 - File manager operations (⌘-arrows, ⌘o, ⌘i, enter is rename file)
 - VSCode (implemented) and JetBrains IDE (to do)
-- Caps is Esc (feel free to change, but is is obviously the best choice)
+- Caps is Esc (feel free to change, but it is obviously the best choice)
 - Some additional keys (like ⇧⌃-numbers to move window to specific desktop, which is not available in MacOS itself but consistent with ⌃-numbers for switching desktops)
 
 Application-specific shortcuts may vary, but expect at least ⌘-letters.
