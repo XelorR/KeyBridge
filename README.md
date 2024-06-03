@@ -6,14 +6,16 @@ Unified ergonomic MacOS-like bindings for GNU Linux and MS Windows
 
 Assume:
 
-| Keyboard key | Behave like |
-|--------------|-------------|
-| Escape       | ⎋ (Escape)  |
-| CapsLock     | ⎋ (Escape)  |
-| Shift        | ⇧ (Shift)   |
-| Ctrl         | ⌃ (Control) |
-| Super        | ⌥ (Option)  |
-| Alt          | ⌘ (Command) |
+| Keyboard key | Behave like        |
+|--------------|--------------------|
+| Escape       | ⎋ (Escape)         |
+| CapsLock     | ⎋ (Escape)         |
+| Shift        | ⇧ (Shift)          |
+| Ctrl         | ⌃ (Control)        |
+| Super        | ⌥ (Option)         |
+| Alt          | ⌘ (Command)        |
+| Backspace    | ⌫ (Delete)         |
+| Del          | ⌦ (Forward Delete) |
 
 Expect similar behavior on MacOS, GNU Linux and MacOS in general:
 
@@ -23,7 +25,7 @@ Expect similar behavior on MacOS, GNU Linux and MacOS in general:
 - Emacs-like editing (⌃a, ⌃e, ⌃p, ⌃n, ⌃f, ⌃b, ⌃d)
 - MacOS-like ⌘-arrows behavior
 - Super behave like Alt in terminals
-- [Rectangle](https://rectangleapp.com/)-like window snap left/right and maximize (⌃⌥←, ⌃⌥→, ⌃⌥↑)
+- [Rectangle](https://rectangleapp.com/)-like window snap left/right and maximize (⌃⌥←, ⌃⌥→, ⌃⌥Enter)
 - File manager operations (⌘-arrows, ⌘o, ⌘i, enter is rename file)
 - VSCode (implemented) and JetBrains IDE (to do)
 - Caps is Esc (feel free to change, but is is obviously the best choice)
