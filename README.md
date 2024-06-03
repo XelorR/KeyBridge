@@ -1,35 +1,106 @@
 # KeyBridge
 
-Unified ergonomic MacOS-like bindings for GNU Linux and MS windows
+Unified ergonomic MacOS-like bindings for GNU Linux and MS Windows
 
 > Learn once, use everywhere
 
-## Focus
+Assume:
 
-OS:
+| Keyboard key | Behave like |
+|--------------|-------------|
+| Escape       | ⎋ (Escape)  |
+| CapsLock     | ⎋ (Escape)  |
+| Shift        | ⇧ (Shift)   |
+| Ctrl         | ⌃ (Control) |
+| Super        | ⌥ (Option)  |
+| Alt          | ⌘ (Command) |
+
+Expect similar behavior on MacOS, GNU Linux and MacOS in general:
+
+- Common keys (⌘-letters)
+- Tab navigation (⇧⌘] / ⇧⌘[)
+- Mission Control and workspaces (F3, ⌃←, ⌃→, ⌃↑)
+- Emacs-like editing (⌃a, ⌃e, ⌃p, ⌃n, ⌃f, ⌃b, ⌃d)
+- MacOS-like ⌘-arrows behavior
+- Super behave like Alt in terminals
+- [Rectangle](https://rectangleapp.com/)-like window snap left/right and maximize (⌃⌥←, ⌃⌥→, ⌃⌥↑)
+- File manager operations (⌘-arrows, ⌘o, ⌘i, enter is rename file)
+- VSCode (implemented) and JetBrains IDE (to do)
+- Caps is Esc (feel free to change, but is is obviously the best choice)
+- Some additional keys (like ⇧⌃-numbers to move window to specific desktop, which is not available in MacOS itself but it is aligned with ⌃-numbers for switching desktops)
+
+Application-specific shortcuts may vary, but expect at least ⌘-letters.
+
+Setup is focused on two most popular environments:
 
 - Gnome, Wayland (Ubuntu 24.04 perfectly fits)
 - Windows 11
 
-Functionality:
+It may also work on different GNU Linux desktops if you align default shortcuts and install correct [xremap](https://github.com/xremap/xremap) version, but it is not the priority.
 
-- Common keys (⌘-letters)
-- Tab navigation with ⇧⌘] / ⇧⌘[
-- Multitasking, Mission Control and workspaces
-- Emacs-like editing
-- [Rectangle](https://rectangleapp.com/)-like window snap left/right and maximize
-- File manager operations
-- VSCode (done) and JetBrains IDE (to do)
-- Non-conflicting bindings, trying to keep native functionality when possible
+## Installation
 
-Decided to implement differently:
+### Linux setup
 
-- Make screenshot like on Windows (win+shift+s / ⇧⌥s)
-- Move windows when possible (not available on MacOS)
-- More Emacs-like keys for some apps
-- CapsLock is additional Escape
+- [install](./install-xremap.sh) [xremap](https://github.com/xremap/xremap)
+- install [this](https://extensions.gnome.org/extension/5060/xremap/) **Gnome extension** if use Gnome
+- run [pre-setup script](./pre-setup-linux.sh)
+- download xremap config named [linux.yml](./linux.yml)
+- add xremap with config to autorun
 
-> As it may work on wide range of desktops and configurations, supporting both Wayland and X11, I am still focusing on supporting only two most popular systems: **Gnome (Wayland)** and **Windows 11**.
+```bash
+#!/bin/bash
+
+# get repo
+mkdir -p ~/.config
+git clone https://github.com/XelorR/KeyBridge ~/.config/keybridge
+
+# install keymapping software
+bash ~/.config/keybridge/install-xremap.sh
+
+# setup system shortcuts to ensure compatibility
+bash ~/.config/keybridge/pre-setup-linux.sh
+
+# enable service
+systemctl enable --now --user keybridge
+```
+
+If you use [VSCodium](https://vscodium.com/) or [VSCode](https://code.visualstudio.com/), you should also disable Alt focusing to menu bar:
+
+![disable alt in vscode](./assets/vscode-disable-alt-focus-menu-bar.png)
+
+### Windows setup
+
+- manually add 9 desktops (to have 10 in total)
+- install [autohotkey v2](https://www.autohotkey.com/v2/)
+- download ahkv2 config named [windows.ahk](./windows.ahk)
+- place config to `shell:startup` and run it
+
+```powershell
+# install package manager
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+# install keymapping software
+scoop install git
+scoop bucket add extras
+scoop install autohotkey
+
+# download the config
+git clone https://github.com/XelorR/KeyBridge $env:LOCALAPPDATA/keybridge
+
+# add to autorun
+# ...
+
+# run
+# ...
+```
+### MacOS setup
+
+- install [Rectangle](https://rectangleapp.com/), use defaults
+- change CapsLock to Escape in settings
+- change layout switching to Option-Space (to behave like Super-Space on Linux/Windows)
+- change screenshot hotkey to ⇧⌥s in settings (it is easier to press than Command-Shift-4 and it is the default for KDE Plasma and Windows)
 
 ## Motivation
 
@@ -68,69 +139,13 @@ Both have following issues:
 - modifier swap for _some_ apps which breaks general OS functionality
 - focusing on wide range of desktop environments which require some trade-offs, force to avoid some features and increasing complexity
 
-## Installation
-
-### Linux setup
-
-- [install](./install-xremap.sh) [xremap](https://github.com/xremap/xremap)
-- install [this](https://extensions.gnome.org/extension/5060/xremap/) **Gnome extension** if use Gnome
-- run [pre-setup script](./pre-setup-linux.sh)
-- download xremap config named [linux.yml](./linux.yml)
-- add xremap with config to autorun
-
-```bash
-#!/bin/bash
-
-# get repo
-mkdir -p ~/.config
-git clone https://github.com/XelorR/KeyBridge ~/.config/keybridge
-
-# install keymapping software
-bash ~/.config/keybridge/install-xremap.sh
-
-# setup system shortcuts to ensure compatibility
-bash ~/.config/keybridge/pre-setup-linux.sh
-
-# enable service
-systemctl enable --now --user keybridge
-```
-
-If you use [VSCodium](https://vscodium.com/) or [VSCode](https://code.visualstudio.com/), you should also disable Alt focusing to menu bar:
-
-![disable alt in vscode](./assets/vscode-disable-alt-focus-menu-bar.png)
-
-### Windows setup
-
-- install [autohotkey v2](https://www.autohotkey.com/v2/)
-- download ahkv2 config named [windows.ahk](./windows.ahk)
-- place config to `shell:startup` and run it
-
-```powershell
-# install package manager
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-
-# install keymapping software
-scoop install git
-scoop bucket add extras
-scoop install autohotkey
-
-# download the config
-git clone https://github.com/XelorR/KeyBridge $env:LOCALAPPDATA/keybridge
-
-# add to autorun
-...
-
-# run
-...
-```
 
 ## To do
 
 - [x] systemd service for xremap
-- [ ] setup scripts
-- [ ] more linux desktops support
-- [ ] smarter xremap Installation
-- [ ] windows switch desktops by numbers
-- [ ] more detailed readme: analysis description
+- [x] setup scripts
+- [x] windows switch desktops by numbers
+- [x] more detailed readme: analysis description
 - [ ] xremap installer compatibility with arm64
+- [ ] JetBrains IDE
+- [ ] screenshots for macos setup
