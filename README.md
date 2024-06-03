@@ -121,12 +121,12 @@ Why I took mostly MacOS-like approach instead of Linux/Windows
   - edition keys - using ⌘ allow us to bind emacs-like keys without much conflict
   - tab switching - ⇧⌘] / ⇧⌘[ are reachable from home row, unlike ctrl-pgup or ctrl-tab
   - multitasking - one ctrl key to rule them all. And it is not conflicting with other keys
-  - window management - taking Rectangle approach because it is easy to get on mac and it has nice defaults and it's easy to replicaye it on other systems
+  - window management - taking Rectangle approach because it is easy to get on mac and it has nice defaults and it's easy to replicate it on other systems
   - file manager operations
     - ⌘-arrows to navigation and opening files is very natural when you use to it
     - enter to rename is a good idea because can be used from home row
     - ⌘-backspace is easier to reach than delete
-  - capslock is useless, let it be one more Escape, reachable from home row
+  - capslock is useless, let it be one more Escape, reachable from home row (by default there is no Escape reachable from home row, so you need Escape anyway)
 
 ## Similar projects
 
@@ -138,8 +138,8 @@ I am familiar with two similar projects
 Both have following issues:
 
 - no multitasking / workspace control mappings
-- modifier swap for _some_ apps which breaks general OS functionality
-- focusing on wide range of desktop environments which require some trade-offs, force to avoid some features and increasing complexity
+- modifier swap for _some_ apps which leads to inconsistency in multitasking shortcuts
+- focusing on too many desktop environments which require some trade-offs, force to avoid some features and increase complexity
 
 
 ## To do
