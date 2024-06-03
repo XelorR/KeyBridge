@@ -140,6 +140,7 @@ Both have following issues:
 - no multitasking / workspace control mappings
 - modifier swap for _some_ apps which leads to inconsistency in multitasking shortcuts
 - focusing on too many desktop environments which require some trade-offs, force to avoid some features and increase complexity
+- use outdated or abandonned keymapping software (like ahk v1 or xkeysnail)
 
 
 ## To do
