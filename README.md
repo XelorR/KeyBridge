@@ -2,6 +2,8 @@
 
 Unified ergonomic MacOS-like bindings for GNU Linux and MS windows
 
+> Learn once, use everywhere
+
 ## Focus
 
 OS:
