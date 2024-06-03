@@ -101,6 +101,7 @@ git clone https://github.com/XelorR/KeyBridge $env:LOCALAPPDATA/keybridge
 ```
 ### MacOS setup
 
+- manually add 9 desktops (to have 10 in total)
 - install [Rectangle](https://rectangleapp.com/), use defaults
 - change CapsLock to Escape in settings
 - change layout switching to Option-Space (to behave like Super-Space on Linux/Windows)
