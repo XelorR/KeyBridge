@@ -80,7 +80,7 @@ keymap:
       Alt-n: Control-n
       Alt-o: Control-o
       Alt-p: Control-p
-      Alt-q: Control-q
+      Alt-q: Alt-F4
       Alt-r: Control-r
       Alt-s: Control-s
       Alt-t: Control-t
@@ -322,6 +322,7 @@ keymap:
       Alt-n: Control-n
       Alt-o: Enter
       Alt-p: Control-p
+      Alt-q: Alt-F4
       Alt-r: Control-r
       Alt-s: Control-s
       Alt-t: Control-t
@@ -425,31 +426,21 @@ keymap:
     remap:
       Alt-comma: [Shift-F10, p, Enter]
 
-  # CLOSE WITH Alt-F4
-  # at least terminals and it's settings to include
-  - name: "to be closed with Alt-F4, not ctrl-q"
+  # TERMINALS
+  - name: terminals
     application:
       only:
         [
-          gnome-terminal-preferences,
           konsole,
+          gnome-terminal-preferences,
           gnome-terminal-server,
           Gnome-terminal,
           kitty,
           wezterm,
           Warp,
-          dolphin,
-          Nautilus,
         ]
     remap:
       Alt-q: Alt-F4
-
-  # TERMINALS
-  - name: terminals
-    application:
-      only:
-        [konsole, gnome-terminal-server, Gnome-terminal, kitty, wezterm, Warp]
-    remap:
       Alt-n: Control-Shift-n
       Alt-t: Control-Shift-t
       Alt-w: Control-Shift-w
