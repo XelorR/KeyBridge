@@ -66,7 +66,7 @@ bash ~/.config/keybridge/install-xremap.sh
 # enable service
 systemctl enable --now --user keybridge
 
-# yoi may nee to reboot then
+# you may nee to reboot then
 ```
 
 If you use [VSCodium](https://vscodium.com/) or [VSCode](https://code.visualstudio.com/), you should also disable Alt focusing to menu bar:
