@@ -1,30 +1,57 @@
 # KeyBridge
 
-Unified ergonomic MacOS-like bindings for GNU Linux and MS Windows
+Unified ergonomic MacOS-like bindings for GNU Linux and MS windows
 
-Currently Ubuntu 24.04 and Windows 11 tested.
+## Focus
+
+OS:
+
+- Gnome, Wayland (Ubuntu 24.04 perfectly fits)
+- Windows 11
+
+Functionality:
+
+- Common keys (⌘-letters)
+- Tab navigation with ⇧⌘] / ⇧⌘[
+- Multitasking, Mission Control and workspaces
+- Emacs-like editing
+- [Rectangle](https://rectangleapp.com/)-like window snap left/right and maximize
+- File manager operations
+- VSCode (done) and JetBrains IDE (to do)
+- Non-conflicting bindings, trying to keep native functionality when possible
+
+Decided to implement differently:
+
+- Make screenshot like on Windows (win+shift+s / ⇧⌥s)
+- Move windows when possible (not available on MacOS)
+- More Emacs-like keys for some apps
+- CapsLock is additional Escape
 
 > As it may work on wide range of desktops and configurations, supporting both Wayland and X11, I am still focusing on supporting only two most popular systems: **Gnome (Wayland)** and **Windows 11**.
 
 ## Motivation
 
-- unification and similar experience
-- most ergonomic keys, taking best from all systems
-- learn once, use everywhere
+- unification and similar experience on Mac/Linux/Windows
 - easy to setup
-- to use [xremap](https://github.com/xremap/xremap) instead of [xkeysnail](https://github.com/mooz/xkeysnail)/[keyszer](https://github.com/joshgoebel/keyszer)
 - minimize conflicts with OS shortcuts
+- use [xremap](https://github.com/xremap/xremap) instead of [xkeysnail](https://github.com/mooz/xkeysnail)/[keyszer](https://github.com/joshgoebel/keyszer)
 
 ## Analysis
 
-- edition keys...
-- tab switching...
-- common modifier-letter keys...
-- multitasking...
-- window management...
-- capslock...
-- file manager operations..
-- compatibility with emacs and posix bindings
+Why I took mostly MacOS-like approach instead of Linux/Windows
+
+- it is more fun to remap with [xremap](https://github.com/xremap/xremap) or [autohotkey](https://www.autohotkey.com/v2/), than with [karabiner](https://karabiner-elements.pqrs.org/)
+- most of macos shortcuts are more ergonomic and less conflicting with posix programs
+  - common modifier-letter keys - ⌘ is easier to reach than ctrl
+  - edition keys - using ⌘ allow us to bind emacs-like keys without much conflict
+  - tab switching - ⇧⌘] / ⇧⌘[ are reachable from home row, unlike ctrl-pgup or ctrl-tab
+  - multitasking - one ctrl key to rule them all. And it is not conflicting with other keys
+  - window management - taking Rectangle approach because it is easy to get on mac and it has nice defaults and it's easy to replicaye it on other systems
+  - file manager operations
+    - ⌘-arrows to navigation and opening files is very natural when you use to it
+    - enter to rename is a good idea because can be used from home row
+    - ⌘-backspace is easier to reach than delete
+  - capslock is useless, let it be one more Escape, reachable from home row
 
 ## Similar projects
 
