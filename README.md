@@ -57,11 +57,11 @@ It may also work on different GNU Linux desktops if you align default shortcuts 
 mkdir -p ~/.config
 git clone https://github.com/XelorR/KeyBridge ~/.config/keybridge
 
-# install keymapping software
-bash ~/.config/keybridge/install-xremap.sh
-
 # setup system shortcuts to ensure compatibility
 bash ~/.config/keybridge/pre-setup-linux.sh
+
+# install keymapping software
+bash ~/.config/keybridge/install-xremap.sh
 
 # enable service
 systemctl enable --now --user keybridge
@@ -151,6 +151,7 @@ Both have following issues:
 - [x] setup scripts
 - [x] windows switch desktops by numbers
 - [x] more detailed readme: analysis description
+- [ ] add installation of pre-requisites to pre-setup-linux script
 - [ ] xremap installer compatibility with arm64
 - [ ] JetBrains IDE
 - [ ] screenshots for macos setup
