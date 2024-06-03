@@ -45,7 +45,7 @@ GroupAdd "excludeTerminalsFilemanagers_binds", "ahk_group vscodes"
 ; MISSION CONTROL
 ^Up::#Tab
 F3::#Tab
-!F3::ComObjCreate("Shell.Application").ToggleDesktop()
+; !F3::ComObjCreate("Shell.Application").ToggleDesktop()
 ^Left::^#Left
 ^Right::^#Right
 ^1::Send "#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}"
