@@ -689,3 +689,4 @@ keymap:
       Alt-down: Control-down # expand
       Alt-Shift-up: Alt-Shift-up # move line up
       Alt-Shift-down: Alt-Shift-down # move line down
+      Alt-Enter: Control-Enter # toggle TODO
