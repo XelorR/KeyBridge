@@ -676,8 +676,15 @@ keymap:
       Super-Enter: Alt-Enter # show context actions
       Super-up: Control-w # expand selection
       Super-down: Control-Shift-w # shrink selection
-      Alt-slash: Control-slash
-      Alt-Super-slash: Control-Shift-slash
+      Alt-slash: Control-slash # add/remove line or block comment
+      Alt-Super-slash: Control-Shift-slash # comment out line or block of code
+      Super-F7: Alt-F7 # find usages
+      Control-T: Control-Alt-Shift-t # refactor this
+      Control-V: Alt-grave # VCS operations
+      Control-Shift-left: Control-Alt-Shift-left # resize tool window left
+      Control-Shift-right: Control-Alt-Shift-right # resize tool window right
+      Control-Shift-up: Control-Alt-Shift-up # resize tool window up
+      Control-Shift-down: Control-Alt-Shift-down # resize tool window down
 
       Alt-a: Control-a
       Alt-b: Control-b
