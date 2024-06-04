@@ -671,14 +671,19 @@ keymap:
     application:
       only: [jetbrains-pycharm-ce]
     remap:
-      Alt-Shift-a: Control-Shift-a
-      Alt-Comma: Control-Alt-s
+      Alt-Shift-a: Control-Shift-a # find action
+      Alt-Comma: Control-Alt-s # open settings
+      Super-Enter: Alt-Enter # show context actions
+      Super-up: Control-w # expand selection
+      Super-down: Control-Shift-w # shrink selection
+      Alt-slash: Control-slash
+      Alt-Super-slash: Control-Shift-slash
 
       Alt-a: Control-a
       Alt-b: Control-b
       Alt-c: Control-c
       Alt-d: Control-d
-      Alt-e: Control-e
+      Alt-e: Control-e # view recent files
       Alt-f: Control-f
       Alt-g: Control-g
       Alt-h: Control-h
