@@ -56,6 +56,7 @@ keymap:
           wezterm,
           Code,
           VSCodium,
+          jetbrains-pycharm-ce,
           Emacs,
           dolphin,
           Nautilus,
@@ -665,6 +666,41 @@ keymap:
       Control-Shift-g: [Control-Shift-g, g] # focus version control
       Control-Alt-f: F11
 
+  # JETBRAINS
+  - name: "PyCharm"
+    application:
+      only: [jetbrains-pycharm-ce]
+    remap:
+      Alt-Shift-a: Control-Shift-a
+      Alt-Comma: Control-Alt-s
+
+      Alt-a: Control-a
+      Alt-b: Control-b
+      Alt-c: Control-c
+      Alt-d: Control-d
+      Alt-e: Control-e
+      Alt-f: Control-f
+      Alt-g: Control-g
+      Alt-h: Control-h
+      Alt-i: Control-i
+      Alt-j: Control-j
+      Alt-k: Control-k
+      Alt-l: Control-l
+      Alt-m: Control-m
+      Alt-n: Control-n
+      Alt-o: Control-o
+      Alt-p: Control-p
+      Alt-q: Alt-F4
+      Alt-r: Control-r
+      Alt-s: Control-s
+      Alt-t: Control-t
+      Alt-u: Control-u
+      Alt-v: Control-v
+      Alt-w: Control-w
+      Alt-x: Control-x
+      Alt-y: Control-y
+      Alt-z: Control-z
+
   - name: "extended editing capabilities"
     application:
       # only simple text editors/notepads
@@ -678,7 +714,6 @@ keymap:
 
   - name: "LogSeq"
     application:
-      # only simple text editors/notepads
       only: [Logseq]
     remap:
       # collapse/expand: cmd-up/down
