@@ -155,4 +155,7 @@ Both have following issues:
 - [ ] add installation of pre-requisites to pre-setup-linux script
 - [ ] xremap installer compatibility with arm64
 - [ ] JetBrains IDE
+- [ ] disable confirmation dialog for file deletion on ⌘⌫
+- [ ] add Shift-Command-Delete: Empty the Trash.
+- [ ] add Option-Shift-Command-Delete: Empty the Trash without confirmation dialog
 - [ ] screenshots for macos setup
