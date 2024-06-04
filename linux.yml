@@ -242,10 +242,9 @@ keymap:
           dolphin,
           qemu-system-x86_64,
           Warp,
+          Logseq,
         ]
     remap:
-      Super-Right: Control-right
-      Super-Left: Control-left
       Alt-left: home
       Alt-right: end
       Alt-up: Control-home # cmd-up    | go to beginning of file
@@ -267,6 +266,8 @@ keymap:
           Warp,
         ]
     remap:
+      Super-Right: Control-right
+      Super-Left: Control-left
       Control-p: up
       Control-n: down
       Control-f: right
@@ -674,3 +675,17 @@ keymap:
       Super-d: Control-Delete
       Control-k: [Shift-end, Delete]
       Control-u: [Shift-home, Backspace]
+
+  - name: "LogSeq"
+    application:
+      # only simple text editors/notepads
+      only: [Logseq]
+    remap:
+      # collapse/expand: cmd-up/down
+      # move up/down: cmd-shift-up-down
+      Alt-left: home # to row beginning
+      Alt-right: end # to row end
+      Alt-up: Control-up # collapse
+      Alt-down: Control-down # expand
+      Alt-Shift-up: Alt-Shift-up # move line up
+      Alt-Shift-down: Alt-Shift-down # move line down
