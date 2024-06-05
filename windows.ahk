@@ -46,6 +46,9 @@ GroupAdd "excludeTerminalsFilemanagers_binds", "ahk_group completelyExclude"
 GroupAdd "excludeTerminalsFilemanagers_binds", "ahk_group vscodes"
 
 ; ABSOLUTE GLOBAL -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+; MOUSE
+$!LButton::^LButton
+$#LButton::!LButton
 ; MISSION CONTROL
 ^Up::#Tab
 F3::#Tab
