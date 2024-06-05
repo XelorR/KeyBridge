@@ -49,6 +49,7 @@ GroupAdd "excludeTerminalsFilemanagers_binds", "ahk_group vscodes"
 ; MOUSE
 $!LButton::^LButton
 $#LButton::!LButton
+
 ; MISSION CONTROL
 ^Up::#Tab
 F3::#Tab
