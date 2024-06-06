@@ -250,6 +250,7 @@ keymap:
       Alt-right: end
       Alt-up: Control-home # cmd-up    | go to beginning of file
       Alt-down: Control-end # cmd-down | go to end of file
+  
   - name: "emacs-like"
     application:
       # exclude terminals, filemanagers and Emacs
@@ -450,6 +451,19 @@ keymap:
       Alt-v: Control-Shift-v
       Control-Alt-t: Control-Alt-t
       Control-Alt-f: F11
+
+  - name: "terminals - editing"
+    application:
+      only:
+        [
+          konsole,
+          gnome-terminal-preferences,
+          gnome-terminal-server,
+          Gnome-terminal,
+          kitty,
+          wezterm,
+        ]
+    remap:
       Super-right: Alt-f
       Super-left: Alt-b
       Super-f: Alt-f
@@ -457,6 +471,26 @@ keymap:
       Super-Backspace: Alt-Backspace
       Super-Delete: Alt-d
       Super-d: Alt-d
+
+  - name: "terminals - Warp, editing"
+    application:
+      only: [Warp]
+    remap:
+      Super-b: Control-left
+      Super-f: Control-right
+      Super-left: Control-left
+      Super-right: Control-right
+      Super-Backspace: Control-Backspace
+      Alt-Backspace: [Shift-home, Backspace]
+      Super-d: Control-Delete
+      Control-k: [Shift-end, Delete]
+      Control-u: [Shift-home, Backspace]
+      Control-f: right
+      Control-b: left
+      Control-p: up
+      Control-n: down
+      Control-a: home
+      Control-e: end
 
   # EXCEPTIONS ONLY -- VERY APP SPECIFIC -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   # TEXT EDITORS
