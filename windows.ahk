@@ -13,6 +13,9 @@ GroupAdd "chromes", "ahk_exe chrome.exe"
 GroupAdd "chromes", "ahk_exe brave.exe"
 GroupAdd "chromes", "ahk_exe msedge.exe"
 GroupAdd "office", "ahk_exe excel.exe"
+GroupAdd "outlook", "ahk_exe msedgewebview2.exe"
+GroupAdd "outlook", "ahk_exe outlook.exe"
+GroupAdd "outlook", "ahk_exe olk.exe"
 GroupAdd "browsers", "ahk_group chromes"
 GroupAdd "browsers", "ahk_group firefoxes"
 GroupAdd "explorer", "ahk_class CabinetWClass ahk_exe explorer.exe"
@@ -550,7 +553,7 @@ $!0::^0
 }
 
 ; OUTLOOK
-#HotIf WinActive("ahk_exe outlook.exe")
+#HotIf WinActive("ahk_group outlook")
 {
   !Enter::^Enter
   !=::^=
