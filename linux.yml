@@ -228,7 +228,7 @@ keymap:
       Control-Super-Alt-Shift-z: Control-Super-Alt-Shift-z
 
   # NUMBERS
-  - name: "terminals - Warp, editing"
+  - name: numbers
     application:
       only: [Warp, Code, VSCodium]
     remap:
