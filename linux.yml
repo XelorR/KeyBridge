@@ -503,6 +503,7 @@ keymap:
     remap:
       Alt-m: Control-m # open block context menu
       Alt-k: Control-k # clear blocks
+      Alt-a: Control-a # select all
       Alt-b: Control-b # bookmark selected block
       Alt-i: Control-i # reinput selected commands
       Alt-slash: Control-slash # keyboard shortcuts
