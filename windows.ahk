@@ -377,6 +377,15 @@ $^#Enter::
   !,::Send "{Ctrl Down}{t}{Ctrl Up}about:preferences{Enter}"
 }
 
+; BROWSERS
+#HotIf WinActive("ahk_group browsers")
+{
+  ; dev tools
+  #!i::^+i
+  #!j::^+j
+  #!c::^+c
+}
+
 ; TERMINALS
 #HotIf WinActive("ahk_group terminals")
 {
