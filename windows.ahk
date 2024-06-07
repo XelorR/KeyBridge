@@ -371,7 +371,6 @@ $!0::^0
 #HotIf WinActive("ahk_group terminals")
 {
   !c::^Insert ; copy
-  !d::^+d ; duplicate tab
   !n::^+n ; new window
   !p::^+p ; command palette
   !q::!F4 ; close window
