@@ -493,6 +493,12 @@ keymap:
       Control-e: end
       Alt-left: home
       Alt-right: end
+      Alt-Super-up: Control-Shift-up #           MacOS | ⌥⌘↑     | Insert cursor above
+      Alt-Super-down: Control-Shift-down #             | ⌥⌘↓     | Insert cursor below
+      Alt-up: Control-up
+      Alt-down: Control-down
+      Super-up: Alt-up
+      Super-down: Alt-down
 
   # EXCEPTIONS ONLY -- VERY APP SPECIFIC -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   # TEXT EDITORS
