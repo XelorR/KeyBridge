@@ -472,6 +472,15 @@ keymap:
       Super-Delete: Alt-d
       Super-d: Alt-d
 
+  - name: "terminals - Konsole"
+    application:
+      only: [konsole]
+    remap:
+      # custom thing
+      Control-Shift-v: Control-Shift-9 # split vertically
+      Control-Shift-h: Control-Shift-0 # split horisontally
+      Control-Shift-s: Control-Shift-0 # split horisontally
+
   - name: "terminals - Warp, editing"
     application:
       only: [Warp]
@@ -489,8 +498,10 @@ keymap:
       Alt-slash: Control-slash
       Alt-Shift-p: Control-Shift-p
 
-      Control-Shift-9: Control-Shift-d
-      Control-Shift-0: Control-Shift-e
+      # custom thing
+      Control-Shift-v: Control-Shift-d # split vertically
+      Control-Shift-h: Control-Shift-e # split horisontally
+      Control-Shift-s: Control-Shift-e # split horisontally
 
       Super-b: Control-left
       Super-f: Control-right

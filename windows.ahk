@@ -388,8 +388,12 @@ $!0::^0
   ^e::End
   ^d::Delete
   !,::^,
-  ^+9::!+=
-  ^+0::!+-
+
+  ; custom thing
+  ^+v::!+= ; split vertically   
+  ^+h::!+- ; split horisontally 
+  ^+v::!+- ; split horisontally 
+
   ^+Left::!Left
   ^+Right::!Right
   ^+Up::!Up
