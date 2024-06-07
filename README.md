@@ -165,3 +165,4 @@ Both have following issues:
 - [ ] add Shift-Command-Delete: Empty the Trash.
 - [ ] add Option-Shift-Command-Delete: Empty the Trash without confirmation dialog
 - [ ] screenshots for macos setup
+- [ ] windows - map ctrl+win+left/right to snap windows

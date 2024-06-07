@@ -82,8 +82,8 @@ $!9::^9
 $!0::^0
 
 ; WINDOW MANAGEMENT
-^#Left::#Left
-^#Right::#Right
+$^#Left::Send "{LWin down}{Left}{LWin up}" ; doesn't work by some reason
+$^#Right::Send "{LWin down}{Right}{LWin up}" ; doesn't work by some reason
 $^#Enter::
 {
   active_id := WinGetID("A")
