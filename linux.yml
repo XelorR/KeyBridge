@@ -476,6 +476,22 @@ keymap:
     application:
       only: [Warp]
     remap:
+      Alt-1: Control-1
+      Alt-2: Control-2
+      Alt-3: Control-3
+      Alt-4: Control-4
+      Alt-5: Control-5
+      Alt-6: Control-6
+      Alt-7: Control-7
+      Alt-8: Control-8
+      Alt-9: Control-9
+
+      Alt-slash: Control-slash
+      Alt-Shift-p: Control-Shift-p
+
+      Control-Shift-9: Control-Shift-d
+      Control-Shift-0: Control-Shift-e
+
       Super-b: Control-left
       Super-f: Control-right
       Super-left: Control-left
