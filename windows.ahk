@@ -94,7 +94,7 @@ $!0::^0
 }
 ; LAUNCHERS
 !Space::#s
-^!t::Run A_ComSpec, A_MyDocuments
+^!t::Run "wt"
 ; LOCK
 ^!q::DllCall("LockWorkStation")
 
@@ -176,7 +176,7 @@ $!0::^0
   ^!q::DllCall("LockWorkStation") ; lock screen
   ^!r::^!r
   ^!s::^!s
-  ^!t::Run A_ComSpec, A_MyDocuments
+  ^!t::Run "wt"
   ^!u::^!u
   ^!v::^!v
   ^!w::^!w
@@ -374,7 +374,7 @@ $!0::^0
   !q::!F4
   !n::^+n
   !t::^+t
-  ^!t::Run A_ComSpec, A_MyDocuments
+  ^!t::Run "wt"
   !w::^+w
   ^!f::F11
   !Left::Home
