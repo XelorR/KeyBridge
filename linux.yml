@@ -227,6 +227,22 @@ keymap:
       Control-Super-Alt-Shift-y: Control-Super-Alt-Shift-y
       Control-Super-Alt-Shift-z: Control-Super-Alt-Shift-z
 
+  # NUMBERS
+  - name: "terminals - Warp, editing"
+    application:
+      only: [Warp, Code, VSCodium]
+    remap:
+      Alt-1: Control-1
+      Alt-2: Control-2
+      Alt-3: Control-3
+      Alt-4: Control-4
+      Alt-5: Control-5
+      Alt-6: Control-6
+      Alt-7: Control-7
+      Alt-8: Control-8
+      Alt-9: Control-9
+      Alt-0: Control-0
+
     # TEXT EDITING / ARROWS
   - name: "arrows"
     application:
@@ -485,17 +501,6 @@ keymap:
     application:
       only: [Warp]
     remap:
-      Alt-1: Control-1
-      Alt-2: Control-2
-      Alt-3: Control-3
-      Alt-4: Control-4
-      Alt-5: Control-5
-      Alt-6: Control-6
-      Alt-7: Control-7
-      Alt-8: Control-8
-      Alt-9: Control-9
-      Alt-0: Control-0
-
       Alt-slash: Control-slash # keyboard shortcuts
       Alt-Shift-p: Control-Shift-p # command palette
 
@@ -696,15 +701,15 @@ keymap:
       # implemented in VSCODE LETTERS subsection #     | ⌘w      | Close editor
       # implemented in VSCODE LETTERS subsection #     | ⌘k f    | Close folder
       Alt-backslash: Control-backslash #               | ⌘\      | Split editor
-      Alt-1: Control-1 #                               | ⌘1      | Focus into 1st editor group
-      Alt-2: Control-2 #                               | ⌘2      | Focus into 2nd editor group
-      Alt-3: Control-3 #                               | ⌘3      | Focus into 3rd editor group
-      Alt-4: Control-4 #                               | ⌘4      | Focus into 4th editor group
-      Alt-5: Control-5 #                               | ⌘5      | Focus into 5th editor group
-      Alt-6: Control-6 #                               | ⌘6      | Focus into 6th editor group
-      Alt-7: Control-7 #                               | ⌘7      | Focus into 7th editor group
-      Alt-8: Control-8 #                               | ⌘8      | Focus into 8th editor group
-      Alt-9: Control-9 #                               | ⌘9      | Focus into 9th editor group
+      # implemented in NUMBERS subsection              | ⌘1      | Focus into 1st editor group
+      # implemented in NUMBERS subsection              | ⌘2      | Focus into 2nd editor group
+      # implemented in NUMBERS subsection              | ⌘3      | Focus into 3rd editor group
+      # implemented in NUMBERS subsection              | ⌘4      | Focus into 4th editor group
+      # implemented in NUMBERS subsection              | ⌘5      | Focus into 5th editor group
+      # implemented in NUMBERS subsection              | ⌘6      | Focus into 6th editor group
+      # implemented in NUMBERS subsection              | ⌘7      | Focus into 7th editor group
+      # implemented in NUMBERS subsection              | ⌘8      | Focus into 8th editor group
+      # implemented in NUMBERS subsection              | ⌘9      | Focus into 9th editor group
       # to be implemented                              | ⌘k ⌘←   | Focus into previous editor group
       # to be implemented                              | ⌘k ⌘→   | Focus into next editor group
       # to be implemented                              | ⌘⇧k ⌘⇧← | Move editor left
