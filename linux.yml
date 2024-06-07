@@ -12,8 +12,6 @@ keymap:
       Alt-F3: Super-d
       Control-left: Super-pageup
       Control-right: Super-pagedown
-      Control-Shift-left: Super-Shift-pageup
-      Control-Shift-right: Super-Shift-pagedown
       # Control-down: Super-grave
       Control-1: Super-Alt-1
       Control-2: Super-Alt-2
@@ -42,6 +40,13 @@ keymap:
       Control-Super-right: Super-right
       # LOCK SCREEN
       Control-Alt-q: Super-l
+  - name: "Global except obviously conflicting apps"
+    application:
+      not: [konsole, Warp]
+    remap:
+      # MISSION CONTROL
+      Control-Shift-left: Super-Shift-pageup
+      Control-Shift-right: Super-Shift-pagedown
 
   # GLOBAL -- EVERYTHING WITH EXCEPTIONS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   - name: "Global non-specific letters"
@@ -536,6 +541,8 @@ keymap:
       Control-Shift-v: Control-Shift-d # split vertically
       Control-Shift-h: Control-Shift-e # split horisontally
       Control-Shift-s: Control-Shift-e # split horisontally
+      Control-Shift-left: Control-Shift-9 # focus left panel
+      Control-Shift-right: Control-Shift-0 # focus right panel
 
       # emacs-like editing
       Super-b: Control-left
