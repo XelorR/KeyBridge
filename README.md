@@ -77,6 +77,7 @@ If you use [VSCodium](https://vscodium.com/) or [VSCode](https://code.visualstud
 
 ### Windows setup
 
+- run [pre-setup script](./pre-setup-windows.ps1)
 - manually add 9 desktops (to have 10 in total)
 - install [autohotkey v2](https://www.autohotkey.com/v2/)
 - download ahkv2 config named [windows.ahk](./windows.ahk)
@@ -94,6 +95,9 @@ scoop install autohotkey
 
 # download the config
 git clone https://github.com/XelorR/KeyBridge $env:LOCALAPPDATA/keybridge
+
+# run pre-setup windows script
+./pre-setup-windows.ps1
 
 # add to autorun
 # ...

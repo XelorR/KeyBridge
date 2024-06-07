@@ -381,22 +381,12 @@ $!0::^0
   ^!f::F11 ; fullscreen
   ^!t::Run "wt" ; new terminal instance
 
-  #Left::^Left
-  #Right::^Right
-  #Up::!Up
-  #Down::!Down
+  ; edition
+  #b::!b
+  #f::!f
   !Left::Home
   !Right::End
   !BackSpace::Send "+{Home}{BackSpace}"
-
-  ; Emacs-like
-  ^p::Up
-  ^n::Down
-  ^f::Right
-  ^b::Left
-  ^a::Home
-  ^e::End
-  ^d::Delete
 
   ; settings
   !,::^,
@@ -412,6 +402,7 @@ $!0::^0
   ^+h::!+- ; split horisontally 
   ^+v::!+- ; split horisontally 
 
+  ; navigate panes, like in Konsole
   ^+Left::!Left
   ^+Right::!Right
   ^+Up::!Up
