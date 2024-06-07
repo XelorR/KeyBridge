@@ -400,7 +400,7 @@ $!0::^0
   ; custom thing
   ^+v::!+= ; split vertically   
   ^+h::!+- ; split horisontally 
-  ^+v::!+- ; split horisontally 
+  ^+s::!+- ; split horisontally 
 
   ; navigate panes, like in Konsole
   ^+Left::!Left
