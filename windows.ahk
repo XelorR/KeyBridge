@@ -84,7 +84,17 @@ $!0::^0
 ; WINDOW MANAGEMENT
 ^#Left::#Left
 ^#Right::#Right
-^#Enter::WinMaximize "A"
+$^#Enter::
+{
+  active_id := WinGetID("A")
+  MX := WinGetMinMax(active_id )
+  if (MX==1)
+      WinRestore active_id 
+  else if (MX==-1)
+      WinRestore active_id 
+  else if (MX==0)
+      WinMaximize active_id
+}
 #h::WinMinimize "A"
 !#h::
 {
