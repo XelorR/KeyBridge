@@ -565,10 +565,10 @@ keymap:
       Super-down: Alt-down
 
       # switch panes
-      Alt-Super-up: Control-Alt-up
-      Alt-Super-down: Control-Alt-down
-      Alt-Super-left: Control-Alt-left
-      Alt-Super-right: Control-Alt-right
+      Alt-Super-up: Control-Alt-up # focus up panel
+      Alt-Super-down: Control-Alt-down # focus down panel
+      Alt-Super-left: Control-Alt-left # focus left panel
+      Alt-Super-right: Control-Alt-right # focus right panel
       # custom thing
       Control-Shift-left: Control-Alt-left # focus left panel
       Control-Shift-right: Control-Alt-right # focus right panel
