@@ -494,6 +494,7 @@ keymap:
       Alt-7: Control-7
       Alt-8: Control-8
       Alt-9: Control-9
+      Alt-0: Control-0
 
       Alt-slash: Control-slash # keyboard shortcuts
       Alt-Shift-p: Control-Shift-p # command palette
