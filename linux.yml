@@ -501,11 +501,32 @@ keymap:
     application:
       only: [Warp]
     remap:
-      Alt-m: Control-m # open block context menu
-      Alt-k: Control-k # clear blocks
       Alt-a: Control-a # select all
       Alt-b: Control-b # bookmark selected block
+      # Alt-c: Control-c
+      Alt-d: Control-d
+      Alt-e: Control-e
+      Alt-f: Control-f
+      Alt-g: Control-g
+      Alt-h: Control-h
       Alt-i: Control-i # reinput selected commands
+      Alt-j: Control-j
+      Alt-k: Control-k # clear blocks
+      Alt-l: Control-l
+      Alt-m: Control-m # open block context menu
+      # Alt-n: Control-n
+      Alt-o: Control-o
+      Alt-p: Control-p
+      # Alt-q: Alt-F4
+      Alt-r: Control-r
+      Alt-s: Control-s
+      # Alt-t: Control-t
+      Alt-u: Control-u
+      # Alt-v: Control-v
+      # Alt-w: Control-w
+      Alt-x: Control-x
+      Alt-y: Control-y
+      Alt-z: Control-z
       Alt-slash: Control-slash # keyboard shortcuts
       Alt-Shift-p: Control-Shift-p # command palette
 
