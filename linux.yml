@@ -495,8 +495,8 @@ keymap:
       Alt-8: Control-8
       Alt-9: Control-9
 
-      Alt-slash: Control-slash
-      Alt-Shift-p: Control-Shift-p
+      Alt-slash: Control-slash # keyboard shortcuts
+      Alt-Shift-p: Control-Shift-p # command palette
 
       # custom thing
       Control-Shift-v: Control-Shift-d # split vertically
