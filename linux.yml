@@ -537,13 +537,6 @@ keymap:
       Alt-slash: Control-slash # keyboard shortcuts
       Alt-Shift-p: Control-Shift-p # command palette
 
-      # custom thing
-      Control-Shift-v: Control-Shift-d # split vertically
-      Control-Shift-h: Control-Shift-e # split horisontally
-      Control-Shift-s: Control-Shift-e # split horisontally
-      Control-Shift-left: Control-Shift-9 # focus left panel
-      Control-Shift-right: Control-Shift-0 # focus right panel
-
       # emacs-like editing
       Super-b: Control-left
       Super-f: Control-right
@@ -576,6 +569,12 @@ keymap:
       Alt-Super-down: Control-Alt-down
       Alt-Super-left: Control-Alt-left
       Alt-Super-right: Control-Alt-right
+      # custom thing
+      Control-Shift-left: Control-Alt-left # focus left panel
+      Control-Shift-right: Control-Alt-right # focus right panel
+      Control-Shift-v: Control-Shift-d # split vertically
+      Control-Shift-h: Control-Shift-e # split horisontally
+      Control-Shift-s: Control-Shift-e # split horisontally
 
   # EXCEPTIONS ONLY -- VERY APP SPECIFIC -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   # TEXT EDITORS
