@@ -516,7 +516,7 @@ keymap:
       Alt-m: Control-m # open block context menu
       # Alt-n: Control-n
       Alt-o: Control-o
-      Alt-p: Control-p
+      Alt-p: Control-Shift-p # command palette
       # Alt-q: Alt-F4
       Alt-r: Control-r
       Alt-s: Control-s
