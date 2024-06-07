@@ -450,6 +450,16 @@ keymap:
     remap:
       Alt-comma: [Shift-F10, p, Enter]
 
+  # BROWSERS
+  - name: browsers
+    application:
+      only: [Brave-browser, Microsoft-edge, Google-chrome, firefox]
+    remap:
+      # dev tools
+      Super-Alt-i: Control-Shift-i
+      Super-Alt-j: Control-Shift-j
+      Super-Alt-c: Control-Shift-c
+
   # TERMINALS
   - name: terminals
     application:
