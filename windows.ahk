@@ -370,16 +370,26 @@ $!0::^0
 ; TERMINALS
 #HotIf WinActive("ahk_group terminals")
 {
-  ^!q::DllCall("LockWorkStation")
-  !q::!F4
-  !n::^+n
-  !t::^+t
-  ^!t::Run "wt"
-  !w::^+w
-  ^!f::F11
+  !c::^Insert ; copy
+  !d::^+d ; duplicate tab
+  !n::^+n ; new window
+  !p::^+p ; command palette
+  !q::!F4 ; close window
+  !t::^+t ; new tab
+  !v::+Insert ; paste
+  !w::^+w ; close tab
+  ^!f::F11 ; fullscreen
+  ^!t::Run "wt" ; new terminal instance
+
+  #Left::^Left
+  #Right::^Right
+  #Up::!Up
+  #Down::!Down
   !Left::Home
   !Right::End
   !BackSpace::Send "+{Home}{BackSpace}"
+
+  ; Emacs-like
   ^p::Up
   ^n::Down
   ^f::Right
@@ -387,7 +397,15 @@ $!0::^0
   ^a::Home
   ^e::End
   ^d::Delete
+
+  ; settings
   !,::^,
+  !+,::^+,
+
+  ; zoom
+  !0::^0
+  !=::^=
+  !-::^-
 
   ; custom thing
   ^+v::!+= ; split vertically   
