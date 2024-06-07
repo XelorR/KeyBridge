@@ -527,6 +527,8 @@ keymap:
       Alt-x: Control-x
       Alt-y: Control-y
       Alt-z: Control-z
+
+      Control-r: Control-r # ensure avoiding conflict with Vim
       Alt-slash: Control-slash # keyboard shortcuts
       Alt-Shift-p: Control-Shift-p # command palette
 
@@ -535,6 +537,7 @@ keymap:
       Control-Shift-h: Control-Shift-e # split horisontally
       Control-Shift-s: Control-Shift-e # split horisontally
 
+      # emacs-like editing
       Super-b: Control-left
       Super-f: Control-right
       Super-left: Control-left
@@ -552,12 +555,20 @@ keymap:
       Control-e: end
       Alt-left: home
       Alt-right: end
-      Alt-Super-up: Control-Shift-up #           MacOS | ⌥⌘↑     | Insert cursor above
-      Alt-Super-down: Control-Shift-down #             | ⌥⌘↓     | Insert cursor below
+
+      # block up/down
       Alt-up: Control-up
       Alt-down: Control-down
+
+      # bookmark up/down
       Super-up: Alt-up
       Super-down: Alt-down
+
+      # switch panes
+      Alt-Super-up: Control-Alt-up
+      Alt-Super-down: Control-Alt-down
+      Alt-Super-left: Control-Alt-left
+      Alt-Super-right: Control-Alt-right
 
   # EXCEPTIONS ONLY -- VERY APP SPECIFIC -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   # TEXT EDITORS
