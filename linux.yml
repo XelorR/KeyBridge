@@ -250,7 +250,7 @@ keymap:
       Alt-right: end
       Alt-up: Control-home # cmd-up    | go to beginning of file
       Alt-down: Control-end # cmd-down | go to end of file
-  
+
   - name: "emacs-like"
     application:
       # exclude terminals, filemanagers and Emacs
@@ -491,6 +491,8 @@ keymap:
       Control-n: down
       Control-a: home
       Control-e: end
+      Alt-left: home
+      Alt-right: end
 
   # EXCEPTIONS ONLY -- VERY APP SPECIFIC -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   # TEXT EDITORS
