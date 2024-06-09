@@ -546,6 +546,7 @@ keymap:
       Control-r: Control-r # ensure avoiding conflict with Vim
       Alt-slash: Control-slash # keyboard shortcuts
       Alt-Shift-p: Control-Shift-p # command palette
+      Alt-Shift-j: Control-Shift-j # open notebook
 
       # emacs-like editing
       Super-b: Control-left
