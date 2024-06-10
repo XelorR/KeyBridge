@@ -53,6 +53,10 @@ if [[ "$XDG_CURRENT_DESKTOP" == "GNOME" || "$XDG_CURRENT_DESKTOP" == "ubuntu:GNO
 		gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>w', '<Alt>Space']"
 		gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a']"
 
+		echo Configuring scrolling...
+		gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
+		gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
+
 		echo Configuring Super-Shift-s to make a screenshot...
 		gsettings set org.gnome.shell.keybindings show-screenshot-ui "['Print', '<Shift><Super>s']"
 		echo Done!
