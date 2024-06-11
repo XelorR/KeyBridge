@@ -5,6 +5,8 @@ modmap:
 keymap:
   # ABSOLUTE GLOBAL -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   - name: "workspace management"
+    application:
+      not: [qemu-system-x86_64, qemu]
     remap:
       # MISSION CONTROL
       Control-up: Super-w
@@ -42,7 +44,7 @@ keymap:
       Control-Alt-q: Super-l
   - name: "Global except obviously conflicting apps"
     application:
-      not: [konsole, Warp]
+      not: [konsole, Warp, qemu-system-x86_64, qemu]
     remap:
       # MISSION CONTROL
       Control-Shift-left: Super-Shift-pageup
@@ -66,6 +68,7 @@ keymap:
           dolphin,
           Nautilus,
           qemu-system-x86_64,
+          qemu,
           Warp,
         ]
     remap:
@@ -263,6 +266,7 @@ keymap:
           Nautilus,
           dolphin,
           qemu-system-x86_64,
+          qemu,
           Warp,
           Logseq,
         ]
@@ -286,6 +290,7 @@ keymap:
           Nautilus,
           dolphin,
           qemu-system-x86_64,
+          qemu,
           Warp,
         ]
     remap:
@@ -312,6 +317,7 @@ keymap:
           Nautilus,
           Emacs,
           qemu-system-x86_64,
+          qemu,
           Warp,
         ]
     remap:
