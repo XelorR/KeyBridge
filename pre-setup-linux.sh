@@ -64,6 +64,17 @@ if [[ "$XDG_CURRENT_DESKTOP" == "GNOME" || "$XDG_CURRENT_DESKTOP" == "ubuntu:GNO
 elif [ "$XDG_CURRENT_DESKTOP" == "KDE" ]; then
   sed -i 's|\(Switch to Desktop\) \([0-9]\)=[^,]*,[^,]*,[A-Za-z]\+ to Desktop [0-9]|\1 \2=Meta+Ctrl+\2,,\1 \2|' ~/.config/kglobalshortcutsrc
   sed -i 's|\(Switch to Desktop\) 10=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 10|\1 10=Meta+Ctrl+0,,\1 10|' ~/.config/kglobalshortcutsrc
-  sed -i 's|\(Window to Desktop\) \([0-9]\)=[^,]*,[^,]*,[A-Za-z]\+ to Desktop [0-9]|\1 \2=Meta+Ctrl+Shift+\2,,\1 \2|' ~/.config/kglobalshortcutsrc
-  sed -i 's|\(Window to Desktop\) 10=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 10|\1 10=Meta+Ctrl+Shift+0,,\1 10|' ~/.config/kglobalshortcutsrc
+
+  sed -i 's|\(Window to Desktop\) 1=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 1|\1 1=Meta+Ctrl+Shift+!,,\1 1|' ~/.config/kglobalshortcutsrc
+  sed -i 's|\(Window to Desktop\) 2=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 2|\1 2=Meta+Ctrl+Shift+@,,\1 2|' ~/.config/kglobalshortcutsrc
+  sed -i 's|\(Window to Desktop\) 3=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 3|\1 3=Meta+Ctrl+Shift+#,,\1 3|' ~/.config/kglobalshortcutsrc
+  sed -i 's|\(Window to Desktop\) 4=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 4|\1 4=Meta+Ctrl+Shift+$,,\1 4|' ~/.config/kglobalshortcutsrc
+  sed -i 's|\(Window to Desktop\) 5=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 5|\1 5=Meta+Ctrl+Shift+%,,\1 5|' ~/.config/kglobalshortcutsrc
+  sed -i 's|\(Window to Desktop\) 6=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 6|\1 6=Meta+Ctrl+Shift+^,,\1 6|' ~/.config/kglobalshortcutsrc
+  sed -i 's|\(Window to Desktop\) 7=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 7|\1 7=Meta+Ctrl+Shift+\&,,\1 7|' ~/.config/kglobalshortcutsrc
+  sed -i 's|\(Window to Desktop\) 8=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 8|\1 8=Meta+Ctrl+Shift+*,,\1 8|' ~/.config/kglobalshortcutsrc
+  sed -i 's|\(Window to Desktop\) 9=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 9|\1 9=Meta+Ctrl+Shift+(,,\1 9|' ~/.config/kglobalshortcutsrc
+  sed -i 's|\(Window to Desktop\) 10=[^,]*,[^,]*,[A-Za-z]\+ to Desktop 10|\1 10=Meta+Ctrl+Shift+),,\1 10|' ~/.config/kglobalshortcutsrc
+
+  sed -i 's|^RectangularRegionScreenS.\+|RectangularRegionScreenShot=Meta+Shift+Print\\tMeta+Shift+S|' ~/.config/kglobalshortcutsrc
 fi
